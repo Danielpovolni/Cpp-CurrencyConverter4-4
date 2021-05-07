@@ -14,6 +14,7 @@ int main(){
 	cout << "Enter the amount you wanna convert: ";
 	cin >> amount;
 	float float_amount = (float)amount;
+	// checking if input is good
 	if((currency_from != "dollar" && "euro" && " yen" && "franc") && (currency_to != "dollar" && "euro" && " yen" && "franc")){
     cout << "Wrong input! ";
     nice = false;
@@ -34,10 +35,7 @@ int main(){
 	float float_base = (float)base;
 	float result;
 	
-	//if((currency_from != "dollar" && "euro" && " yen" && "franc")){
-    //cout << "Wrong input ";
-    //nice = false;
-    //}
+
   	if(currency_to == "dollar"){
 		result= float_base*1; }
   	else if(currency_to == "euro"){
