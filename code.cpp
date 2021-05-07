@@ -1,8 +1,10 @@
+
 #include <iostream>
 #include <string>
 using namespace std;
 
 int main(){
+	bool nice;
 	string currency_from, currency_to;
 	float amount, base;
 	cout << "Enter from witch currency you wanna convert(euro,yen,pound,franc,dollar): ";
@@ -11,11 +13,12 @@ int main(){
 	cin >> currency_to;
 	cout << "Enter the amount you wanna convert: ";
 	cin >> amount;
- 
-	//BASE 
-
 	float float_amount = (float)amount;
-	if( currency_from =="dollar"){
+	if((currency_from != "dollar" && "euro" && " yen" && "franc") && (currency_to != "dollar" && "euro" && " yen" && "franc")){
+    cout << "Wrong input! ";
+    nice = false;
+    }
+	else if( currency_from =="dollar"){
 		base = float_amount / 1;}
 		
 	else if( currency_from =="euro"){
@@ -31,7 +34,10 @@ int main(){
 	float float_base = (float)base;
 	float result;
 	
-
+	//if((currency_from != "dollar" && "euro" && " yen" && "franc")){
+    //cout << "Wrong input ";
+    //nice = false;
+    //}
   	if(currency_to == "dollar"){
 		result= float_base*1; }
   	else if(currency_to == "euro"){
@@ -40,6 +46,7 @@ int main(){
 		result= float_base*109.28; }
 	else if(currency_to == "franc"){
 		result= float_base*0.91; }
-	cout << amount<< " " <<  currency_from << "(s)" << " is " << result << " " <<  currency_to << "(s)" ;			
+	if (nice != false){	
+	cout << amount<< " " <<  currency_from << "(s)" << " is " << result << " " <<  currency_to << "(s)" ;}			
 
 }
