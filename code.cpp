@@ -9,32 +9,42 @@ int main(){
 	float amount, base;
 	cout << "Enter from witch currency you wanna convert(euro,yen,pound,franc,dollar): ";
 	cin >> currency_from;
+	if(currency_from != "dollar" && "euro" && " yen" && "franc"){
+    cout << "Wrong input! " << endl;
+    nice = true;}
+	else {
 	cout << "Enter to witch currency you wanna convert(euro,yen,pound,franc,dollar): ";
 	cin >> currency_to;
+	if(currency_to != "dollar" && "euro" && " yen" && "franc"){
+    cout << "Wrong input! " << endl;}
+	else{
 	cout << "Enter the amount you wanna convert: ";
 	cin >> amount;
+	nice = true;}
+	if(amount == 0){
+        cout << "Wrong input!" << endl;
+        nice = true;
+	}
+    nice == true;
+	}
 	float float_amount = (float)amount;
-	// checking if input is good
-	if((currency_from != "dollar" && "euro" && " yen" && "franc") && (currency_to != "dollar" && "euro" && " yen" && "franc")){
-    cout << "Wrong input! ";
-    nice = false;
-    }
-	else if( currency_from =="dollar"){
+
+	if( currency_from =="dollar"){
 		base = float_amount / 1;}
-		
+
 	else if( currency_from =="euro"){
 		base = float_amount / 0.83;}
-		
+
 	else if( currency_from =="yen"){
 		base = float_amount / 109.28;}
-		
+
 	else if( currency_from =="franc"){
 		base = float_amount / 0.91;}
-	
-	//converting values to float	
+
+	//converting values to float
 	float float_base = (float)base;
 	float result;
-	
+
 
   	if(currency_to == "dollar"){
 		result= float_base*1; }
@@ -44,7 +54,5 @@ int main(){
 		result= float_base*109.28; }
 	else if(currency_to == "franc"){
 		result= float_base*0.91; }
-	if (nice == false){	
-	cout << amount<< " " <<  currency_from << "(s)" << " is " << result << " " <<  currency_to << "(s)" ;}			
-
-}
+	if(nice == false){
+	cout << amount<< " " <<  currency_from << "(s)" << " is " << result << " " <<  currency_to << "(s)" ;}}
