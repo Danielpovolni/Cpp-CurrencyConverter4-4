@@ -44,7 +44,7 @@ int main(){
 		result= float_base*109.28; }
 	else if(currency_to == "franc"){
 		result= float_base*0.91; }
-	if (nice != false){	
+	if (nice == false){	
 	cout << amount<< " " <<  currency_from << "(s)" << " is " << result << " " <<  currency_to << "(s)" ;}			
 
 }
