@@ -1,9 +1,9 @@
 
 #include <iostream>
 #include <string>
-using namespace std;
 
 int main(){
+	using namespace std;
 	bool nice;
 	string currency_from, currency_to;
 	float amount, base;
