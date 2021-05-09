@@ -9,13 +9,13 @@ int main(){
 	float amount, base;
 	cout << "Enter from witch currency you wanna convert(euro,yen,pound,franc,dollar): ";
 	cin >> currency_from;
-	if(currency_from != "dollar" && "euro" && " yen" && "franc"){
+	if(currency_from != "dollar" && "euro" && "yen" && "franc"){
     cout << "Wrong input! " << endl;
     nice = true;}
 	else {
 	cout << "Enter to witch currency you wanna convert(euro,yen,pound,franc,dollar): ";
 	cin >> currency_to;
-	if(currency_to != "dollar" && "euro" && " yen" && "franc"){
+	if(currency_to != "dollar" && "euro" && "yen" && "franc"){
     cout << "Wrong input! " << endl;}
 	else{
 	cout << "Enter the amount you wanna convert: ";
