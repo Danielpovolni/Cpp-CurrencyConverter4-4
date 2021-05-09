@@ -32,16 +32,20 @@ int main(){
 	float float_amount = (float)amount;
 
 	if( currency_from =="dollar"){
-		base = float_amount / 1;}
+		base = float_amount / 1;
+		nice = false;}
 
 	else if( currency_from =="euro"){
-		base = float_amount / 0.83;}
+		base = float_amount / 0.83;
+		nice = false;}
 
 	else if( currency_from =="yen"){
-		base = float_amount / 109.28;}
+		base = float_amount / 109.28;
+		nice = false;}
 
 	else if( currency_from =="franc"){
-		base = float_amount / 0.91;}
+		base = float_amount / 0.91;
+		nice = false;}
 
 	//converting values to float
 	float float_base = (float)base;
@@ -49,13 +53,19 @@ int main(){
 
 
   	if(currency_to == "dollar"){
-		result= float_base*1; }
+		result= float_base*1;
+		nice =false;}
   	else if(currency_to == "euro"){
-		result= float_base*0.83; }
+		result= float_base*0.83;
+		nice = false;}
 	else if(currency_to == "yen"){
-		result= float_base*109.28; }
+		result= float_base*109.28;
+		nice = false;}
 	else if(currency_to == "franc"){
-		result= float_base*0.91; }
+		result= float_base*0.91;
+		nice = false;}
 	if(nice == false){
-	cout << amount<< " " <<  currency_from << "(s)" << " is " << result << " " <<  currency_to << "(s)" ;}}}
+	cout << amount<< " " <<  currency_from << "(s)" << " is " << result << " " <<  currency_to << "(s)" ;
+	i =3;}}}
+
 
