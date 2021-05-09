@@ -1,4 +1,4 @@
-# Cpp-CurrencyConverter5-5
+# Cpp-CurrencyConverter4-4
 Currency Converter from any currency(4) to any(4).
 convert from (euro,yen,pound,franc,dollar) to (euro,yen,pound,franc,dollar)
 
