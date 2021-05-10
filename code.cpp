@@ -10,25 +10,25 @@ int main(){
 	cout << "Enter from witch currency you wanna convert(euro,yen,pound,franc,dollar): ";
 	cin >> currency_from;
 	if(currency_from != "dollar" && currency_from != "euro" && currency_from != "yen" && currency_from != "franc"){
-    cout << "Wrong input! " << endl;
-    i = i - 1;}
+    		cout << "Wrong input! " << endl;
+    		i = i - 1;}
 	else {
-	cout << "Enter to witch currency you wanna convert(euro,yen,pound,franc,dollar): ";
-	cin >> currency_to;
-	if(currency_to != "dollar" && currency_to != "euro" && currency_to != "yen" && currency_to != "franc"){
-    cout << "Wrong input! " << endl;
-    i=i-1;}
-	else{
-	cout << "Enter the amount you wanna convert: ";
-	cin >> amount;
-	nice = true;}
-	if(amount == 0){
-        cout << "Wrong input!" << endl;
-        nice = true;
-        i=i-1;
-	}
-    nice == true;
-	}
+		cout << "Enter to witch currency you wanna convert(euro,yen,pound,franc,dollar): ";
+		cin >> currency_to;
+		if(currency_to != "dollar" && currency_to != "euro" && currency_to != "yen" && currency_to != "franc"){
+    			cout << "Wrong input! " << endl;
+    			i=i-1;}
+		else{
+			cout << "Enter the amount you wanna convert: ";
+			cin >> amount;
+			nice = true;}
+		if(amount == 0){
+        		cout << "Wrong input!" << endl;
+        		nice = true;
+        		i=i-1;
+			}
+    		nice == true;
+				}
 	float float_amount = (float)amount;
 
 	if( currency_from =="dollar"){
