@@ -5,6 +5,9 @@ convert from (euro,yen,pound,franc,dollar) to (euro,yen,pound,franc,dollar)
 
 
 It will set up base: it will convert the number from c. to base currency(dollar) and then that base to selected
+
+
+
 example: 5 euros to yen, it will convert how much 5 euros is in dollars and then it will convert that number to yen
 //Enter from witch currency you wanna convert(euro,yen,pound,franc,dollar): euro
 Enter to witch currency you wanna convert(euro,yen,pound,franc,dollar): yen
